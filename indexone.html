@@ -47,13 +47,28 @@
         })
 
         substractionBtn.addEventListener('click', function(){
+            if(input1.value === "" && input2.value === ""){
+            return result.innerHTML = "Please enter Number 1 and Number 2" ;
+           }
+           if(input1.value < input2.value ){
+            return result.innerHTML = "error: number 1 is less than Number 2" ;
+           }
+        //    else if {
+        //     return result.alert ("you do well") ;
+        //    }
             let subtraction = Number(input1.value) - Number(input2.value);
            result.innerHTML = "The answer is " + subtraction ;
         })
 
-        divisionBtn3.addEventListener('click', function(){
-            let subtraction = Number(input1.value) - Number(input2.value);
-           result.innerHTML = "The answer is " + subtractigon ;
+        divisionBtn.addEventListener('click', function(){
+            if(input1.value === "" && input2.value === ""){
+            return result.innerHTML = "Please enter Number 1 and Number 2" ;
+           }
+            if(input1.value < input2.value ){
+            return result.innerHTML = "error: number 1 is less than Number 2" ;
+           }
+            let division = Number(input1.value) / Number(input2.value);
+           result.innerHTML = "The answer is " + division ;
         })
 
         
